@@ -1,0 +1,233 @@
+body{
+    margin: 0;
+}
+/* buttons */
+.btn{
+    /* bg */
+    background-color: rgb(226, 0, 0);
+    /* border */
+    border-radius: 50px;
+    border: 2px solid rgb(226, 0, 0);
+    /* text */
+    color: white;
+    font-size: 2em;
+    /* space */
+    padding: 10px 50px;
+    /* duration */
+    transition: 0.3s ease-in;
+}
+.btn:hover{
+    color: rgb(226, 0, 0);
+    background: none;
+    border-radius: 0;
+}
+
+/* ////////// */
+/* ////////// */
+/* ////////// */
+/* noramal content */
+/* ////////// */
+/* ////////// */
+/* ////////// */
+.topDiv{
+    /* size */
+    min-height: 70vh;
+    width: 80%;
+    /* background */
+    background: url(img/b3.jpg);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-size: cover;
+    /* space */
+    margin: auto;
+    padding: 20vh 10% 10vh 10%; 
+    /* text */
+}
+.topDiv___title{
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    /* space */
+    margin: 0;
+}
+.row{
+    padding: 10vh 0;
+}
+.row___col{
+    padding: 10vh 0;
+    text-align: center;
+}
+.row___col___teamImg{
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+}
+h2{
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10vh;
+}
+p{
+    text-indent: 50px;
+    font-family: 'Noto Sans', sans-serif; 
+    font-style: normal;
+    font-weight: normal;
+    line-height: 33px;
+}
+.paragraphDiv{
+    width: 80%;
+    margin: 50px auto;
+}
+.thinDiv{
+    /* size */
+    min-height: 40vh;
+    width: 100%;
+    /* bg */
+    background-image: url(img/justin-luebke-SmAiLn-nnJg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    /* text */
+    text-align: center;
+    /* space */
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.authorImg{
+    border-radius: 350px;
+    width: 80%;
+}
+/* ////////// */
+/* ////////// */
+/* ////////// */
+/* media */
+/* ////////// */
+/* ////////// */
+/* ////////// */
+
+@media only screen and (max-width:1299px) {
+    .topDiv___title{
+        font-size: 17vw;
+    }
+
+    .navCol{
+        width: 100% !important;
+    }
+    .shadowDiv{
+        display: none !important;;
+    }
+}
+@media only screen and (min-width:1300px) {
+    .topDiv___title{
+        font-size: 10vw;
+    }
+
+
+ 
+}
+
+
+
+/* navigaton */
+.navIcon{
+    /* size */
+    height: 20px;
+    /* positon */
+    position: fixed;
+    z-index: 50;
+    top: 2.5vh;
+    right: 1.5vw;
+}
+
+.navCol{
+    /* size */
+    height: 100vh;
+    width: 30%;
+    /* background */
+    background: white;
+    /* positon */
+    position: fixed;
+    margin-left: -100vw;
+    top: 0;
+    z-index: 20;
+     /* animation */
+     transition: 0.75s;
+}
+.navCol___header{
+    padding: 5vh 2vw;
+}
+.navCol___header___title{
+    font-size: 7vh;
+}
+.navCol___contentDiv{
+    text-align: center;
+}
+.navCol___contentDiv___list___link{
+    display: block;
+    margin: 30px auto;
+
+}
+.navCol___contentDiv___list___link > a{
+    /* text */
+    color: black;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vh;
+    /* space */
+    /* animate */
+    transition: 0.3s;    
+}
+.navCol___contentDiv___list___hover{
+    height: 2px;
+    transition: 0.3s;
+    background: rgb(211, 0, 0);
+    width: 0;
+    margin: auto;
+}
+
+.navCol___contentDiv___list___link:hover .navCol___contentDiv___list___hover{
+    width: 50%;
+}
+
+.shadowDiv{
+    /* size */
+    height: 100vh;
+    width: 70%;
+    /* background */
+    background: #000000a8;
+    /* positon */
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    margin-left: 170vw;
+    /* animation */
+    transition: 0.75s;
+}
+.showNav{
+    margin-left: 0;
+}
+.showShadowDiv{
+    margin-left:30vw;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: none;
+    padding: 10px 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #2c2c2c;
+    transition: 0.5s ease-in-out;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #313131; 
+  }
