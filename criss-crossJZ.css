@@ -1,5 +1,5 @@
 
-@media only screen and (max-width:1299px) {
+@media only screen and (max-width:1099px) {
    .row{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -8,13 +8,25 @@
    .d-xs-none{
     display: none;
 }
+.centerDiv{
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    padding: 10vh 5%;
+}
 
 }
-@media only screen and (min-width:1300px) {
+@media only screen and (min-width:1100px) {
     .row{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
+    }
+    .centerDiv{
+        margin: auto;
+        text-align: center;
+        width: 60%;
+        padding: 10vh 5%;
     }
 }
 
